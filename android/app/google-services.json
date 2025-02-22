@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602098119638",
+    "project_id": "darshan-4c51c",
+    "storage_bucket": "darshan-4c51c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602098119638:android:08d9c61e4dde469da96a77",
+        "android_client_info": {
+          "package_name": "com.example.flutter_try"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmcB1ouNzSs2EMnRNNYsPpu1eDkFLErNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
