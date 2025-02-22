@@ -70,6 +70,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         }
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('User Registered with Google!')));
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Firebase user is null!')));
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to register with Google: $e')));
