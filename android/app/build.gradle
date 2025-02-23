@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.example.flutter_try' // Ensure this matches your Firebase package name
-    compileSdkVersion 34 // Updated compileSdkVersion
+    compileSdkVersion 34  // Updated compileSdkVersion
 
     defaultConfig {
-        applicationId 'com.example.flutter_try' // Ensure this matches google-services.json
+        applicationId "com.example.flutter_try"
         minSdkVersion 23
-        targetSdkVersion 34 // Updated targetSdkVersion
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
