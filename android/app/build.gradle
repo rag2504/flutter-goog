@@ -2,12 +2,20 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'dev.flutter.flutter-gradle-plugin'
-    id 'com.google.gms.google-services'
+    id 'com.google.gms.google-services' // Keep this here
 }
 
 android {
-    namespace 'com.example.darshan'
-    compileSdkVersion 31
+    namespace 'com.example.flutter_try' // Ensure this matches your Firebase package name
+    compileSdkVersion 34 // Updated compileSdkVersion
+
+    defaultConfig {
+        applicationId 'com.example.flutter_try' // Ensure this matches google-services.json
+        minSdkVersion 23
+        targetSdkVersion 34 // Updated targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -15,15 +23,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-
-    defaultConfig {
-        applicationId 'com.example.flutter_try'
-        minSdkVersion 23
-        targetSdkVersion 31
-        versionCode 1
-        versionName "1.0"
+        jvmTarget = '1.8'
     }
 
     buildTypes {
@@ -34,9 +34,10 @@ android {
 }
 
 dependencies {
-    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    implementation platform('com.google.firebase:firebase-bom:32.7.1') // Updated Firebase BOM
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
 }
 
+// Ensure this is at the bottom
 apply plugin: 'com.google.gms.google-services'
